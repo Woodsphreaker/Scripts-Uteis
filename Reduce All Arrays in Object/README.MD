@@ -1,4 +1,4 @@
-# Recuperar todos os números do objeto
+# Recuperar todos os valores do objeto
 
 Tive uma situação em que precisei recuperar todos os valores de um objetos,
 mas esse objeto tinha vários níveis.
