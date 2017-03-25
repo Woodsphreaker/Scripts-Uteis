@@ -36,4 +36,4 @@ const filterObjectValues = values => values.length > 1;
 const concatKeys = (obj, pre, pos) => pre.concat(isObject(obj[pos]) ? [pos].concat(keysList(obj[pos])) : pos);
 const keysList = obj => objectKeys(obj).reduce((pre, pos) => concatKeys(obj, pre, pos), []).filter(filterObjectValues);
 
-console.log(keysList(object))
+console.log(keysList(object)) //"attr1", "attr2", "attr3", "attr4", "subattr4.1", "subattr4.1.1", "subattr4.1.2", "attr5", "subattr5.1", "subattr5.2", "subattr5.3", "subattr5.4", "subattr5.3", "subattr5.3.1", "subattr5.3.2", "subattr5.3.2.1", "subattr5.3.2.2", "subattr5.3.2.2.1", "attr6", "attr7", "attr7.1", "attr7.2", "attr7.2.1", "attr7.2.2", "attr7.2.2.1", "attr7.2.2.2", "attr7.2.2.2.1", "attr7.2.2.2.2"
